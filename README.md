@@ -1,3 +1,7 @@
 # Fingerprint-based-ATM-System
 
-Finalized
+  Finalized
+-------------
+
+-Histogram matching
+-Unique Phone
