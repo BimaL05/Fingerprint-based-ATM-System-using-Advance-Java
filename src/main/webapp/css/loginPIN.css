@@ -37,6 +37,7 @@
 body, html {
 	height: 100%;
 	font-family: Poppins-Regular, sans-serif;
+	overflow: hidden;
 }
 
 /*---------------------------------------------*/
@@ -223,7 +224,7 @@ iframe {
 
 /*---------------------------------------------*/
 .wrap-input100 {
-  position: relative;
+  /*position: relative;*/
   width: 100%;
   z-index: 1;
   margin-bottom: 10px;
