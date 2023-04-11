@@ -98,6 +98,25 @@
                    }
     </script>
     
+    <!-- Invalid Acc No. -->
+    <div id="account-alert" class="custom-alert"
+            <% error = (String) request.getAttribute("error");
+            if(error != null){ %>
+            style="display: block;"
+            <% } else { %>
+            style="display: none;"
+            <% } %>
+    >
+            <p class="heading">Error</p>
+            <p><%= (String) request.getAttribute("error") %></p>
+            <button onclick="closeAlert3()">Close</button>
+    </div>
+    <script>
+                    function closeAlert3() {
+                        document.getElementById("account-alert").style.display = "none";
+                   }
+    </script>
+    
     <nav class="navbar navbar-expand-lg navbar-dark text-light nav-bk">
         <ul class="navbar-nav mr-auto">
         <li class="nav-item"><a class="nav-link text-light disabled mr-5">e-ATM</a></li>

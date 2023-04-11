@@ -62,6 +62,7 @@
     String phone = (String) session.getAttribute("phone");
     %>
     <script>
+    <!-- Amount less than 0-->
         function checkAmount() {
         	var amount = document.getElementById("deposit").value;
         	if (amount <= 0) {
