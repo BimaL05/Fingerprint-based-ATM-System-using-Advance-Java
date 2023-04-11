@@ -44,9 +44,65 @@
         }
     });
 </script>
+
+<style>
+.custom-alert {
+    font-family: Arial, sans-serif;
+    font-size:20px;
+    position: fixed;
+    top: 50%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    background-color: #f2f2f2;
+    border: 1px solid #888;
+    padding: 30px;
+    box-shadow: 0px 0px 10px #888;
+    border-radius: 10px;
+    display: none;
+    z-index: 1;
+    
+}
+.heading {
+    color: #fb6d6d;
+    /*margin: 0;*/
+    font-family: 'Roboto Slab', serif;
+    font-size:20px;
+}
+.custom-alert button {
+    background-color: #fb6d6d;
+    color: #fff;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size:10px;
+}
+</style>
 </head>
 
 <body>
+
+    <!-- Invalid Credentials -->
+    <div id="login-alert" class="custom-alert"
+            <% String error = (String) request.getAttribute("error");
+            if(error != null){ %>
+            style="display: block;"
+            <% } else { %>
+            style="display: none;"
+            <% } %>
+    >
+            <p class="heading">Error</p>
+            <p><%= (String) request.getAttribute("error") %></p>
+            <button onclick="closeAlert2()">Close</button>
+    </div>
+    <script>
+                    function closeAlert2() {
+                        document.getElementById("login-alert").style.display = "none";
+                   }
+    </script>
+
+
 <div class="limiter">
         <div class="container-login100">
             <div class="wrap-login100">
