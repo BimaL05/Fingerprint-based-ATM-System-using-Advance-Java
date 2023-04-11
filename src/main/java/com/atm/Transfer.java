@@ -99,6 +99,11 @@ public class Transfer extends HttpServlet {
 						dispatcher.forward(request, response); 
 		            }
 		        }
+		        else {
+					request.setAttribute("error", "Invalid Account No !");
+					RequestDispatcher dispatcher = request.getRequestDispatcher("transfer.jsp");
+					dispatcher.forward(request, response); 
+	            }
 		    }
 		}
 		catch (SQLException e) {

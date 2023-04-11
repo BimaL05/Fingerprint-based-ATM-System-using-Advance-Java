@@ -54,7 +54,7 @@ public class Login_PIN extends HttpServlet {
 			}
 			else 
 			{		  
-				 request.setAttribute("status", "failed");
+				 request.setAttribute("error", "Invalid Phone No. or PIN");
 				 rd=request.getRequestDispatcher("loginPIN.jsp");
 				 rd.forward(request, response);
 			}
