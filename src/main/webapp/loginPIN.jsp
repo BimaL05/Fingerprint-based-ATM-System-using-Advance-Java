@@ -97,11 +97,17 @@
             <button onclick="closeAlert2()">Close</button>
     </div>
     <script>
-                    function closeAlert2() {
-                        document.getElementById("login-alert").style.display = "none";
-                   }
+            function closeAlert2() {
+                document.getElementById("login-alert").style.display = "none";
+            }
     </script>
-
+    
+    <script>
+            var phoneInput = document.getElementById("phone");
+            phoneInput.addEventListener("input", function () {
+                this.value = this.value.replace(/[^\d]/g, "").slice(0, 10);
+            });
+    </script>
 
 <div class="limiter">
         <div class="container-login100">
@@ -114,7 +120,7 @@
                     <span class="login100-form-title"> User Login</span>
 
                     <div class="wrap-input100 validate-input" > <!-- data-validate = "Valid email is required: ex@abc.xyz"> -->
-                        <input class="input100" type="number" name="phone" id="phone" placeholder="Phone Number" required>
+                        <input class="input100" type="number" name="phone" id="phone" placeholder="Phone Number" pattern="[0-9]{10}" required>
                         <span class="focus-input100"></span>
                         <span class="symbol-input100">
                             <i class="fa fa-phone" aria-hidden="true"></i>

@@ -99,7 +99,14 @@
                         document.getElementById("login-alert").style.display = "none";
                    }
     </script>
-
+    
+    <script>
+        var phoneInput = document.getElementById("phone");
+        phoneInput.addEventListener("input", function () {
+            this.value = this.value.replace(/[^\d]/g, "").slice(0, 10);
+        }); 
+    </script>
+    
     <div class="limiter">
         <div class="container-login100">
             <div class="wrap-login100">
@@ -114,13 +121,11 @@
 
                     <div class="wrap-input100 validate-input m-b-26">
                         <%--  data-validate = "<%=errorPhone%>"--%>
-                        <span class="label-input100">Phone No</span> <input
-                            class="input100" type="number" name="phone"
-                            id="phone" placeholder="Enter Phone Number"
-                            required> <span
-                            class="focus-input100"></span> <span
-                            class="symbol-input100"> <i
-                            class="fa fa-phone" aria-hidden="true"></i>
+                        <span class="label-input100">Phone No</span>
+                         <input class="input100" type="number" name="phone" id="phone" placeholder="Enter Phone Number" pattern="[0-9]{10}" required> 
+                         <span class="focus-input100"></span> 
+                         <span class="symbol-input100">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
                         </span>
                     </div>
 
