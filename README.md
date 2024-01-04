@@ -1,12 +1,12 @@
-# Fingerprint-based ATM System
+# Fingerprint based ATM System
 
 ## Description
 
-The Fingerprint-based ATM System is an Advanced Java web application that utilizes fingerprint authentication for secure user access to an ATM system. Users can perform various banking operations such as checking balances, making transactions, and withdrawing or depositing money. The project leverages a technology stack comprising JAVA, Servlet, JSP, HTML, CSS, JavaScript, and MySQL to provide an efficient and secure ATM experience.
+The Fingerprint based ATM System is an Advanced Java web application that utilizes fingerprint authentication for secure user access to an ATM system. Users can perform various banking operations such as checking balances, making transactions, and withdrawing or depositing money. The project leverages a technology stack comprising JAVA, Servlet, JSP, HTML, CSS, JavaScript, and MySQL to provide an efficient and secure ATM experience.
 
 ### Installation Requirements
 
-Before running the Fingerprint-based ATM System, make sure you have the following prerequisites installed on your system:
+Before running the Fingerprint based ATM System, make sure you have the following prerequisites installed on your system:
 
 1. **Java Development Kit (JDK):**
    - Visit the [Oracle JDK Download Page](https://www.oracle.com/java/technologies/javase-downloads.html) or your preferred JDK provider.
@@ -24,7 +24,7 @@ Before running the Fingerprint-based ATM System, make sure you have the followin
 
 ### Running the Application
 
-Follow these steps to run the Fingerprint-based ATM System:
+Follow these steps to run the Fingerprint based ATM System:
 
 1. Clone the repository:
    ```bash
@@ -58,7 +58,7 @@ The application provides the following features:
 
 ### Security:
 
-- Benefit from enhanced security measures with fingerprint-based authentication.
+- Benefit from enhanced security measures with fingerprint based authentication.
 - Ensure the privacy and confidentiality of user information during transactions.
 
 ### Technology Stack:
