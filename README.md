@@ -1,4 +1,4 @@
-# Fingerprint-based ATM System using Advanced Java
+# Fingerprint-based ATM System
 
 ## Description
 
